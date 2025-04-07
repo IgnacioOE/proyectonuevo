@@ -5,7 +5,7 @@ const stuController = new StuController();
 
 class StuHandler {
 
-    async getStudent(req: Request, res: Response, next: NextFunction) {
+    async handleStudent(req: Request, res: Response, next: NextFunction) {
         try {
             const studentStatus = (await stuController.getStudents()).map(alumnos => {
             let message;
